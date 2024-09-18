@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
-import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
 
-const dmSans = DM_Sans({ subsets: ["latin"] });
+const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
+  title: "Saas Landing Page",
+  description: "Template for SaaS landing page",
 };
 
 export default function RootLayout({
@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE]")}>
+      <body
+        className={twMerge(nunitoSans.className, "antialiased bg-[#EAEEFE]")}
+      >
         {children}
       </body>
     </html>
