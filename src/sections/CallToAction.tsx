@@ -5,9 +5,9 @@ import SpringImage from "../assets/spring.png";
 
 export const CallToAction = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-[#d2dcff] py-24">
+    <section className="bg-gradient-to-b from-white to-[#d2dcff] py-24 overflow-x-clip">
       <div className="container">
-        <div className="section-heading relative overflow-x-clip">
+        <div className="section-heading relative ">
           <h2 className="section-title">Sign up for free today</h2>
           <p className="section-description mt-5">
             Celebrate the joy of accomplishments with an app designed to track
@@ -17,7 +17,7 @@ export const CallToAction = () => {
             src={StarImage}
             alt="Star"
             width={360}
-            className="absolute -left-[350px] -top-[137px]"
+            className="absolute -left-[360px] -top-[137px]"
           />
           <Image
             src={SpringImage}

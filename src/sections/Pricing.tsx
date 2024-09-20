@@ -97,9 +97,7 @@ export const Pricing = () => {
                   <span className="text-4xl font-bold tracking-tighter leading-none">
                     ${monthlyPrice}
                   </span>
-                  <span className="tracking-tight font-bold text-black/50">
-                    /month
-                  </span>
+                  <span className="tracking-tight font-bold ">/month</span>
                 </div>
                 <button
                   className={twMerge(
